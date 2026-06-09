@@ -31,152 +31,62 @@ List<Question> sampleQuestions = [
   ),
 
   Question(
-    statement: 'Desafio 2: Ordene em sequencia logica dos quadros',
+    statement: 'Desafio 2: Marque qual imagem representa a faces dobradas',
 
     imageUrl:
-        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/Imagem1.png', // link  direto do GitHub:
+        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem2.png', // link  direto do GitHub:
     options: [
-      'Opção A: (4), (3), (2), (6), (1), (5)', // Índice 0
-      'Opção B: (5), (4), (3), (6), (2), (1)', // Índice 1
-      'Opção C: (6), (2), (3), (1), (4), (5)', // Índice 2
-      'Opção D: (2), (1), (5), (4), (3), (6)', // Índice 3
+      'Opção A:', // Índice 0
+      'Opção B:', // Índice 1
+      'Opção C:', // Índice 2
+      'Opção D:', // Índice 3
+    ],
+
+    correctAnswerIndex: 3, //Mude aqui a resposta
+  ),
+
+  Question(
+    statement: 'Desafio 3: Qual das opções representa a imagem plana',
+
+    imageUrl:
+        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem3.png', // link  direto do GitHub:
+    options: [
+      'Opção A:', // Índice 0
+      'Opção B:', // Índice 1
+      'Opção C:', // Índice 2
+      'Opção D:', // Índice 3
+    ],
+
+    correctAnswerIndex: 1, //Mude aqui a resposta
+  ),
+
+  Question(
+    statement: 'Desafio 4: Marque qual figura representa o modelo',
+
+    imageUrl:
+        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem4.png', // link  direto do GitHub:
+    options: [
+      'Opção A: ', // Índice 0
+      'Opção B: ', // Índice 1
+      'Opção C: ', // Índice 2
+      'Opção D: ', // Índice 3
     ],
 
     correctAnswerIndex: 0, //Mude aqui a resposta
   ),
 
   Question(
-    statement: 'Desafio 3: Ordene em sequencia logica dos quadros',
+    statement: 'Desafio 5: Marque qual figura representa o modelo',
 
     imageUrl:
-        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/Imagem1.png', // link  direto do GitHub:
+        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem5.png', // link  direto do GitHub:
     options: [
-      'Opção A: (4), (3), (2), (6), (1), (5)', // Índice 0
-      'Opção B: (5), (4), (3), (6), (2), (1)', // Índice 1
-      'Opção C: (6), (2), (3), (1), (4), (5)', // Índice 2
-      'Opção D: (2), (1), (5), (4), (3), (6)', // Índice 3
+      'Opção A: ', // Índice 0
+      'Opção B:', // Índice 1
+      'Opção C: ', // Índice 2
+      'Opção D:', // Índice 3
     ],
 
-    correctAnswerIndex: 0, //Mude aqui a resposta
-  ),
-
-  Question(
-    statement: 'Desafio 4: Ordene em sequencia logica dos quadros',
-
-    imageUrl:
-        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/Imagem1.png', // link  direto do GitHub:
-    options: [
-      'Opção A: (4), (3), (2), (6), (1), (5)', // Índice 0
-      'Opção B: (5), (4), (3), (6), (2), (1)', // Índice 1
-      'Opção C: (6), (2), (3), (1), (4), (5)', // Índice 2
-      'Opção D: (2), (1), (5), (4), (3), (6)', // Índice 3
-    ],
-
-    correctAnswerIndex: 0, //Mude aqui a resposta
-  ),
-
-  Question(
-    statement: 'Desafio 5: Ordene em sequencia logica dos quadros',
-
-    imageUrl:
-        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/Imagem1.png', // link  direto do GitHub:
-    options: [
-      'Opção A: (4), (3), (2), (6), (1), (5)', // Índice 0
-      'Opção B: (5), (4), (3), (6), (2), (1)', // Índice 1
-      'Opção C: (6), (2), (3), (1), (4), (5)', // Índice 2
-      'Opção D: (2), (1), (5), (4), (3), (6)', // Índice 3
-    ],
-
-    correctAnswerIndex: 0, //Mude aqui a resposta
-  ),
-
-  Question(
-    statement: 'Desafio 6: Ordene em sequencia logica dos quadros',
-
-    imageUrl:
-        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/Imagem1.png', // link  direto do GitHub:
-    options: [
-      'Opção A: (4), (3), (2), (6), (1), (5)', // Índice 0
-      'Opção B: (5), (4), (3), (6), (2), (1)', // Índice 1
-      'Opção C: (6), (2), (3), (1), (4), (5)', // Índice 2
-      'Opção D: (2), (1), (5), (4), (3), (6)', // Índice 3
-    ],
-
-    correctAnswerIndex: 0, //Mude aqui a resposta
-  ),
-
-  Question(
-    statement: 'Desafio 7: Ordene em sequencia logica dos quadros',
-
-    imageUrl:
-        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/Imagem1.png', // link  direto do GitHub:
-    options: [
-      'Opção A: (4), (3), (2), (6), (1), (5)', // Índice 0
-      'Opção B: (5), (4), (3), (6), (2), (1)', // Índice 1
-      'Opção C: (6), (2), (3), (1), (4), (5)', // Índice 2
-      'Opção D: (2), (1), (5), (4), (3), (6)', // Índice 3
-    ],
-
-    correctAnswerIndex: 0, //Mude aqui a resposta
-  ),
-
-  Question(
-    statement: 'Desafio 7: Ordene em sequencia logica dos quadros',
-
-    imageUrl:
-        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/Imagem2.png', // link  direto do GitHub:
-    options: [
-      'Opção A: (4), (3), (2), (6), (1), (5)', // Índice 0
-      'Opção B: (5), (4), (3), (6), (2), (1)', // Índice 1
-      'Opção C: (6), (2), (3), (1), (4), (5)', // Índice 2
-      'Opção D: (2), (1), (5), (4), (3), (6)', // Índice 3
-    ],
-
-    correctAnswerIndex: 0, //Mude aqui a resposta
-  ),
-
-  Question(
-    statement: 'Desafio 7: Ordene em sequencia logica dos quadros',
-
-    imageUrl:
-        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/Imagem3.png', // link  direto do GitHub:
-    options: [
-      'Opção A: (4), (3), (2), (6), (1), (5)', // Índice 0
-      'Opção B: (5), (4), (3), (6), (2), (1)', // Índice 1
-      'Opção C: (6), (2), (3), (1), (4), (5)', // Índice 2
-      'Opção D: (2), (1), (5), (4), (3), (6)', // Índice 3
-    ],
-
-    correctAnswerIndex: 0, //Mude aqui a resposta
-  ),
-
-  Question(
-    statement: 'Desafio 7: Ordene em sequencia logica dos quadros',
-
-    imageUrl:
-        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/Imagem4.png', // link  direto do GitHub:
-    options: [
-      'Opção A: (4), (3), (2), (6), (1), (5)', // Índice 0
-      'Opção B: (5), (4), (3), (6), (2), (1)', // Índice 1
-      'Opção C: (6), (2), (3), (1), (4), (5)', // Índice 2
-      'Opção D: (2), (1), (5), (4), (3), (6)', // Índice 3
-    ],
-
-    correctAnswerIndex: 0, //Mude aqui a resposta
-  ),
-
-  Question(
-    statement: 'Desafio 7: Ordene em sequencia logica dos quadros',
-
-    imageUrl:
-        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/Imagem5.png', // link  direto do GitHub:
-    options: [
-      'Opção A: (4), (3), (2), (6), (1), (5)', // Índice 0
-      'Opção B: (5), (4), (3), (6), (2), (1)', // Índice 1
-      'Opção C: (6), (2), (3), (1), (4), (5)', // Índice 2
-      'Opção D: (2), (1), (5), (4), (3), (6)', // Índice 3
-    ],
-
-    correctAnswerIndex: 0, //Mude aqui a resposta
+    correctAnswerIndex: 1, //Mude aqui a resposta
   ),
 ];
