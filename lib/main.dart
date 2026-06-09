@@ -34,7 +34,7 @@ class MainNavigationScreen extends StatefulWidget {
 class _MainNavigationScreenState extends State<MainNavigationScreen> {
   int _currentIndex = 0;
   int _highScore = 0;
-  
+
   // Variáveis de estado do Jogo
   int _currentQuestionIndex = 0;
   int? _selectedAnswerIndex;
@@ -77,7 +77,9 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
       return;
     }
 
-    bool isCorrect = _selectedAnswerIndex == sampleQuestions[_currentQuestionIndex].correctAnswerIndex;
+    bool isCorrect =
+        _selectedAnswerIndex ==
+        sampleQuestions[_currentQuestionIndex].correctAnswerIndex;
 
     if (isCorrect) {
       _currentScore += 10;
@@ -126,7 +128,8 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                   _currentQuestionIndex = 0;
                   _selectedAnswerIndex = null;
                   _currentScore = 0;
-                  _currentIndex = 1; // Leva para a aba de Placar quenado finaliza
+                  _currentIndex =
+                      1; // Leva para a aba de Placar quenado finaliza
                 });
               },
               child: const Text('Ver Recorde'),
@@ -145,26 +148,33 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
       SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          key: ValueKey(_currentQuestionIndex), 
+          key: ValueKey(_currentQuestionIndex),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
                 'Questão ${_currentQuestionIndex + 1} de ${sampleQuestions.length}',
-                style: const TextStyle(fontSize: 16, color: Colors.grey, fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                  fontSize: 16,
+                  color: Colors.grey,
+                  fontWeight: FontWeight.bold,
+                ),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 8),
-  
-                  // ENUNCIADO:
+
+              // ENUNCIADO:
               Text(
                 sampleQuestions[_currentQuestionIndex].statement,
-                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
                 textAlign: TextAlign.justify,
               ),
-  
+
               const SizedBox(height: 12),
-              
+
               // Zoom (Item b)
               Container(
                 height: 250,
@@ -197,12 +207,14 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 ),
               ),
               const SizedBox(height: 15),
-              
+
               // RadioListTile para as opções (Item b)
               ...List.generate(
                 sampleQuestions[_currentQuestionIndex].options.length,
                 (index) => RadioListTile<int>(
-                  title: Text(sampleQuestions[_currentQuestionIndex].options[index]),
+                  title: Text(
+                    sampleQuestions[_currentQuestionIndex].options[index],
+                  ),
                   value: index,
                   groupValue: _selectedAnswerIndex,
                   onChanged: (value) {
@@ -213,7 +225,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              
+
               // ElevatedButton para Confirmar (Item b)
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
@@ -222,13 +234,16 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                   foregroundColor: Colors.white,
                 ),
                 onPressed: _checkAnswer,
-                child: const Text('Confirmar Resposta', style: TextStyle(fontSize: 16)),
+                child: const Text(
+                  'Confirmar Resposta',
+                  style: TextStyle(fontSize: 16),
+                ),
               ),
             ],
           ),
         ),
       ),
-      
+
       // ABA 2: PLACAR ListView
       Center(
         child: Column(
@@ -236,20 +251,37 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
           children: [
             const Icon(Icons.emoji_events, size: 80, color: Colors.amber),
             const SizedBox(height: 10),
-            const Text('🏆 Seu Recorde Máximo:', style: TextStyle(fontSize: 22)),
-            Text('$_highScore Pontos', style: const TextStyle(fontSize: 36, fontWeight: FontWeight.bold, color: Colors.indigo)),
+            const Text(
+              '🏆 Seu Recorde Máximo:',
+              style: TextStyle(fontSize: 22),
+            ),
+            Text(
+              '$_highScore Pontos',
+              style: const TextStyle(
+                fontSize: 36,
+                fontWeight: FontWeight.bold,
+                color: Colors.indigo,
+              ),
+            ),
           ],
         ),
       ),
-      
-      // ABA 3: SOBRE 
+
+      // ABA 3: SOBRE
       const Padding(
         padding: EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text('LogicPixels', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.indigo)),
+            Text(
+              'LogicPixels',
+              style: TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+                color: Colors.indigo,
+              ),
+            ),
             SizedBox(height: 10),
             Text(
               'Aplicativo desenvolvido para o trabalho prático de Flutter.\n\nObjetivo: Resolver testes de raciocínio lógico visual através de análise de imagens com capacidade de zoom responsivo.',
@@ -277,7 +309,10 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
         },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.psychology), label: 'Jogar'),
-          BottomNavigationBarItem(icon: Icon(Icons.emoji_events), label: 'Placar'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.emoji_events),
+            label: 'Placar',
+          ),
           BottomNavigationBarItem(icon: Icon(Icons.info), label: 'Sobre'),
         ],
       ),
