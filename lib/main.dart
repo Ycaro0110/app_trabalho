@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'models/question.dart';
+import 'welcome_screen.dart'; 
 
 void main() {
   runApp(const LogicPixelsApp());
@@ -14,15 +15,17 @@ class LogicPixelsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'LogicPixels',
+      title: 'LogicTest',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
         useMaterial3: true,
       ),
-      home: const MainNavigationScreen(),
+      
+      home: const WelcomeScreen(), //Começa com a etela de bem-vindo
     );
   }
 }
+
 
 class MainNavigationScreen extends StatefulWidget {
   const MainNavigationScreen({super.key});
@@ -35,7 +38,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   int _currentIndex = 0;
   int _highScore = 0;
 
-  // Variáveis de estado do Jogo
+  
   int _currentQuestionIndex = 0;
   int? _selectedAnswerIndex;
   int _currentScore = 0;
@@ -46,7 +49,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     _loadHighScore();
   }
 
-  // PERSISTÊNCIA: Carrega o Recorde (Item d)
+  // PERSISTÊNCIA: Carrega o Recorde
   Future<void> _loadHighScore() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
@@ -54,7 +57,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     });
   }
 
-  // PERSISTÊNCIA: Salva o novo Recorde se for maior (Item d)
+  // PERSISTÊNCIA: Salva o novo Recorde se for maior
   Future<void> _saveHighScore(int score) async {
     if (score > _highScore) {
       final prefs = await SharedPreferences.getInstance();
@@ -65,7 +68,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     }
   }
 
-  // MENSAGEM DE INTERAÇÃO: SnackBar e Dialog (Item c)
+  // MENSAGEM DE INTERAÇÃO: SnackBar e Dialog
   void _checkAnswer() {
     if (_selectedAnswerIndex == null) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -128,8 +131,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                   _currentQuestionIndex = 0;
                   _selectedAnswerIndex = null;
                   _currentScore = 0;
-                  _currentIndex =
-                      1; // Leva para a aba de Placar quenado finaliza
+                  _currentIndex = 1; // Leva para a aba de Placar quando finaliza
                 });
               },
               child: const Text('Ver Recorde'),
@@ -142,7 +144,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // LAYOUT: Construção dinâmica das abas (Item a)
     final List<Widget> screens = [
       // ABA 1: O JOGO
       SingleChildScrollView(
@@ -175,7 +176,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
 
               const SizedBox(height: 12),
 
-              // Zoom (Item b)
+              // zoom
               Container(
                 height: 250,
                 decoration: BoxDecoration(
@@ -208,7 +209,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
               ),
               const SizedBox(height: 15),
 
-              // RadioListTile para as opções (Item b)
+              // RadioListTile para as opções
               ...List.generate(
                 sampleQuestions[_currentQuestionIndex].options.length,
                 (index) => RadioListTile<int>(
@@ -226,7 +227,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
               ),
               const SizedBox(height: 20),
 
-              // ElevatedButton para Confirmar (Item b)
+              // ElevatedButton para Confirmar
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 15),
@@ -244,7 +245,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
         ),
       ),
 
-      // ABA 2: PLACAR ListView
+      // ABA 2: PLACAR
       Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -275,7 +276,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              'LogicPixels',
+              'LogicTest',
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
@@ -284,7 +285,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
             ),
             SizedBox(height: 10),
             Text(
-              'Aplicativo desenvolvido para o trabalho prático de Flutter.\n\nObjetivo: Resolver testes de raciocínio lógico visual através de análise de imagens com capacidade de zoom responsivo.',
+              'O LogicTest é um aplicativo educativo desenvolvido como trabalho prático em Flutter. O objetivo principal é o treinamento e o aprimoramento do raciocínio lógico-visual e espacial por meio de desafios baseados em imagens.\n\nA capacidade de analisar padrões visuais, identificar sequências geométricas e decodificar matrizes abstratas é uma habilidade cognitiva essencial. Ela é amplamente aplicada e valorizada em campos como a Ciência da Computação (no desenvolvimento de algoritmos e arquitetura de software), a Engenharia (na resolução de problemas complexos de infraestrutura), a Inteligência Artificial (no treinamento de visão computacional) e em processos seletivos de tecnologia.',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16),
             ),
@@ -295,7 +296,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('LogicPixels'),
+        title: const Text('LogicTest'),
         backgroundColor: Colors.indigo,
         foregroundColor: Colors.white,
       ),
