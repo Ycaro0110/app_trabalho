@@ -31,7 +31,7 @@ List<Question> sampleQuestions = [
   ),
 
   Question(
-    statement: 'Desafio 2: Marque qual imagem representa a faces dobradas',
+    statement: 'Desafio 2: Qual das alternativas corresponde ao cubo corretamente montado?',
 
     imageUrl:
         'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem2.png', // link  direto do GitHub:
@@ -46,7 +46,7 @@ List<Question> sampleQuestions = [
   ),
 
   Question(
-    statement: 'Desafio 3: Qual das opções representa a imagem plana',
+    statement: 'Desafio 3: Qual das alternativas corresponde ao cubo corretamente desmontado?',
 
     imageUrl:
         'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem3.png', // link  direto do GitHub:
@@ -61,7 +61,7 @@ List<Question> sampleQuestions = [
   ),
 
   Question(
-    statement: 'Desafio 4: Marque qual figura representa o modelo',
+    statement: 'Desafio 4: Qual das alternativas corresponde ao cubo corretamente desmontado?',
 
     imageUrl:
         'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem4.png', // link  direto do GitHub:
@@ -76,7 +76,7 @@ List<Question> sampleQuestions = [
   ),
 
   Question(
-    statement: 'Desafio 5: Marque qual figura representa o modelo',
+    statement: 'Desafio 5: Qual das figuras apresenta a mesma divisão interna e forma do modelo?',
 
     imageUrl:
         'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem5.png', // link  direto do GitHub:
@@ -91,7 +91,7 @@ List<Question> sampleQuestions = [
   ),
 
   Question(
-    statement: 'Desafio 6: Marque qual figura representa o modelo',
+    statement: 'Desafio 6: Qual das alternativas mostra corretamente o cubo após sua montagem?',
 
     imageUrl:
         'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem6.png', // link  direto do GitHub:
@@ -102,11 +102,11 @@ List<Question> sampleQuestions = [
       'Opção D:', // Índice 3
     ],
 
-    correctAnswerIndex: 0, //Mude aqui a resposta
+    correctAnswerIndex: 2, //Mude aqui a resposta
   ),
 
   Question(
-    statement: 'Desafio 7: Marque qual figura representa o modelo',
+    statement: 'Desafio 7: Qual das alternativas corresponde ao cubo corretamente montado?',
 
     imageUrl:
         'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem7.png', // link  direto do GitHub:
@@ -132,7 +132,7 @@ List<Question> sampleQuestions = [
       'Opção D:', // Índice 3
     ],
 
-    correctAnswerIndex: 3, //Mude aqui a resposta
+    correctAnswerIndex: 2, //Mude aqui a resposta
   ),
 
   Question(
@@ -147,11 +147,11 @@ List<Question> sampleQuestions = [
       'Opção D:', // Índice 3
     ],
 
-    correctAnswerIndex: 1, //Mude aqui a resposta
+    correctAnswerIndex: 2, //Mude aqui a resposta
   ),
 
   Question(
-    statement: 'Desafio 10: Marque qual figura representa o modelo',
+    statement: 'Desafio 10: Qual das alternativas corresponde à mesma configuração quando isolada da malha?',
 
     imageUrl:
         'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem10.png', // link  direto do GitHub:
@@ -162,6 +162,6 @@ List<Question> sampleQuestions = [
       'Opção D:', // Índice 3
     ],
 
-    correctAnswerIndex: 2, //Mude aqui a resposta
+    correctAnswerIndex: 0, //Mude aqui a resposta
   ),
 ];
