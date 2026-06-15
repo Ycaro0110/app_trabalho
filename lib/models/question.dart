@@ -89,4 +89,79 @@ List<Question> sampleQuestions = [
 
     correctAnswerIndex: 1, //Mude aqui a resposta
   ),
+
+  Question(
+    statement: 'Desafio 6: Marque qual figura representa o modelo',
+
+    imageUrl:
+        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem6.png', // link  direto do GitHub:
+    options: [
+      'Opção A: ', // Índice 0
+      'Opção B:', // Índice 1
+      'Opção C: ', // Índice 2
+      'Opção D:', // Índice 3
+    ],
+
+    correctAnswerIndex: 0, //Mude aqui a resposta
+  ),
+
+  Question(
+    statement: 'Desafio 7: Marque qual figura representa o modelo',
+
+    imageUrl:
+        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem7.png', // link  direto do GitHub:
+    options: [
+      'Opção A: ', // Índice 0
+      'Opção B:', // Índice 1
+      'Opção C: ', // Índice 2
+      'Opção D:', // Índice 3
+    ],
+
+    correctAnswerIndex: 2, //Mude aqui a resposta
+  ),
+
+  Question(
+    statement: 'Desafio 8: Marque qual figura representa o modelo',
+
+    imageUrl:
+        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem8.png', // link  direto do GitHub:
+    options: [
+      'Opção A: ', // Índice 0
+      'Opção B:', // Índice 1
+      'Opção C: ', // Índice 2
+      'Opção D:', // Índice 3
+    ],
+
+    correctAnswerIndex: 3, //Mude aqui a resposta
+  ),
+
+  Question(
+    statement: 'Desafio 9: Marque qual figura representa o modelo',
+
+    imageUrl:
+        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem9.png', // link  direto do GitHub:
+    options: [
+      'Opção A: ', // Índice 0
+      'Opção B:', // Índice 1
+      'Opção C: ', // Índice 2
+      'Opção D:', // Índice 3
+    ],
+
+    correctAnswerIndex: 1, //Mude aqui a resposta
+  ),
+
+  Question(
+    statement: 'Desafio 10: Marque qual figura representa o modelo',
+
+    imageUrl:
+        'https://raw.githubusercontent.com/Ycaro0110/app_trabalho/main/imagens_quiz/imagem10.png', // link  direto do GitHub:
+    options: [
+      'Opção A: ', // Índice 0
+      'Opção B:', // Índice 1
+      'Opção C: ', // Índice 2
+      'Opção D:', // Índice 3
+    ],
+
+    correctAnswerIndex: 2, //Mude aqui a resposta
+  ),
 ];

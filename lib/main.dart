@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'models/question.dart';
-import 'welcome_screen.dart'; 
+import 'welcome_screen.dart';
 
 void main() {
   runApp(const LogicPixelsApp());
@@ -20,12 +20,11 @@ class LogicPixelsApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
         useMaterial3: true,
       ),
-      
+
       home: const WelcomeScreen(), //Começa com a etela de bem-vindo
     );
   }
 }
-
 
 class MainNavigationScreen extends StatefulWidget {
   const MainNavigationScreen({super.key});
@@ -38,7 +37,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   int _currentIndex = 0;
   int _highScore = 0;
 
-  
   int _currentQuestionIndex = 0;
   int? _selectedAnswerIndex;
   int _currentScore = 0;
@@ -131,7 +129,8 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                   _currentQuestionIndex = 0;
                   _selectedAnswerIndex = null;
                   _currentScore = 0;
-                  _currentIndex = 1; // Leva para a aba de Placar quando finaliza
+                  _currentIndex =
+                      1; // Leva para a aba de Placar quando finaliza
                 });
               },
               child: const Text('Ver Recorde'),

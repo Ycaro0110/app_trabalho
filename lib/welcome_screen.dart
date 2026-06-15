@@ -55,7 +55,7 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                     elevation: 5,
                   ),
-                  onPressed: () { //Vai para a tela de navigação
+                  onPressed: () { //Vai para a tela de navegação
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
